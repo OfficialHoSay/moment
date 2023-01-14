@@ -102,6 +102,29 @@
     <link rel="preconnect" href="https://hitsparkdesign.com">
     <link rel="preconnect" href="https://prod.jxse.dev">
     <link rel="preconnect" href="https://jxse.dev">
+    <script type="application/javascript" src="moment.min.js" crossorigin="anonymous" async></script>
+    <script async>
+        var urlParams;
+        (function () {
+            var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                query  = window.location.search.substring(1);
+            urlParams = {};
+            while (match = search.exec(query))
+               urlParams[decode(match[1])] = decode(match[2]);
+        })();
+        var output = document.getElementById("RTC");
+        if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
+        if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
+        var c;
+        setInterval(
+        c = function() {
+            output.innerText = moment().format(urlParams["format"] || 'HH:mm');
+        }, 1000);
+        c();
+    </script>
 </head>
     <!-- Finally, the body section with stuff -->
 <body>
@@ -148,6 +171,19 @@
             <p>Hello. <b>This is bold text.</b> <i>This is italic text.</i></p>
             <br>
             <br>
+            <div class="Time" id="RTC" 
+       style=	"display: inline-block;
+		font-family: DIN Next LT Pro, monospace;
+        font-weight: 600;
+		font-size: 60px;
+		text-align: center;
+        vertical-align: middle;
+        margin-bottom: -10px;
+		color: white; 
+		border-radius: 20px; 
+		padding: 17px 27px 7px 27px; 
+		background-color: rgba(0, 0, 0, 0.6);">
+  </div>
             <br>
             <br>
             <h6>© Copyright, 2023. OfficialHoSay</h6>
