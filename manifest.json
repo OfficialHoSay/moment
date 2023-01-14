@@ -2,13 +2,13 @@
   "manifest_version": 3,
   "version": "1.0",
   "name": "HoSay’s Web Dev Test",
-  "short_name": "DevTest",
+  "short_name": "Dev Test",
   "start_url": "https://prod.jxse.dev/",
   "scope": "https://prod.jxse.dev/",
   "theme_color": "#202223",
   "background_color": "#202223",
   "description": "This is a sample site that showcases basic HTML tags.",
-  "display": "minimal-ui",
+  "display": "standalone",
   "icons": [
     {
       "src": "./img/favicon-16x16.png",
