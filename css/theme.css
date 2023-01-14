@@ -13,28 +13,29 @@ body {
   margin: auto;
 }
 h1 {
-  color:#e3dfda
+  color:#e3dfda;
 }
 h2 {
-  color:#b9bdc1
+  color:#b9bdc1;
 }
 h3 {
-  color:#7d8085
+  color:#7d8085;
 }
 h4 {
-  color:#6b6d70
+  color:#6b6d70;
 }
 h5 {
-  color:#6b6d70
+  color:#6b6d70;
 }
 h6 {
-  color:#6b6d70
+  color:#6b6d70;
 }
 p {
-  color:#e3dfda
+  color:#e3dfda;
+  font-size: 13px;
 }
 a {
-  color:#456899
+  color:#b64d63;
 }
 hr {
   height: 2px;
@@ -44,7 +45,7 @@ hr {
 }
 .center {
   text-align: center;
-  margin: auto;
+  margin: 4%;
   max-width: 800px;
 }
 .list {
@@ -63,5 +64,5 @@ hr {
 	color: #e3dfda; 
 	border-radius: 10px; 
 	padding: 7px 17px 7px 17px; 
-	background-color: rgb(51, 56, 113);
+	background-color: #8e1537;
 }
