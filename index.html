@@ -72,7 +72,8 @@
     <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#8e1537">
     <meta name="msapplication-TileImage" content="https://prod.jxse.dev/img/ms-icon-144h.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet" crossorigin="anonymous">
     <link rel="canonical" href="https://prod.jxse.dev">
     <link rel="alternate" hreflang="en" href="https://prod.jxse.dev">
     <link rel="alternate" hreflang="x-default" href="https://prod.jxse.dev">
@@ -102,29 +103,6 @@
     <link rel="preconnect" href="https://hitsparkdesign.com">
     <link rel="preconnect" href="https://prod.jxse.dev">
     <link rel="preconnect" href="https://jxse.dev">
-    <script type="application/javascript" src="moment.min.js" crossorigin="anonymous" async></script>
-    <script async>
-        var urlParams;
-        (function () {
-            var match,
-                pl     = /\+/g,
-                search = /([^&=]+)=?([^&]*)/g,
-                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-                query  = window.location.search.substring(1);
-            urlParams = {};
-            while (match = search.exec(query))
-               urlParams[decode(match[1])] = decode(match[2]);
-        })();
-        var output = document.getElementById("RTC");
-        if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
-        if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
-        var c;
-        setInterval(
-        c = function() {
-            output.innerText = moment().format(urlParams["format"] || 'HH:mm');
-        }, 1000);
-        c();
-    </script>
 </head>
     <!-- Finally, the body section with stuff -->
 <body>
@@ -152,41 +130,55 @@
             <!-- Add a couple lists with a couple items each -->
             <div class="list">
                 <h3>Ordered List</h3>
-            <h4>
-            <ol>
-                <li>This is the first item</li>
-                <li>This is the second item</li>
-                <li>This is the third item</li>
-            </ol>
-            </h4>
-            <h3>Unordered List</h3>
-            <h4>
-            <ul>
-                <li>This is one of the items</li>
-                <li>This is another one</li>
-                <li>This one could be any position</li>
-            </ul>
-            </h4>
+                <h4>
+                    <ol>
+                        <li>This is the first item</li>
+                        <li>This is the second item</li>
+                        <li>This is the third item</li>
+                    </ol>
+                </h4>
+                <h3>Unordered List</h3>
+                <h4>
+                    <ul>
+                        <li>This is one of the items</li>
+                        <li>This is another one</li>
+                        <li>This one could be any position</li>
+                    </ul>
+                </h4>
             </div>
             <p>Hello. <b>This is bold text.</b> <i>This is italic text.</i></p>
             <br>
             <br>
-            <div class="Time" id="RTC" 
-       style=	"display: inline-block;
-		font-family: DIN Next LT Pro, monospace;
-        font-weight: 600;
-		font-size: 60px;
-		text-align: center;
-        vertical-align: middle;
-        margin-bottom: -10px;
-		color: white; 
-		border-radius: 20px; 
-		padding: 17px 27px 7px 27px; 
-		background-color: rgba(0, 0, 0, 0.6);">
-  </div>
+            <h4>By the way, the current time is:</h4>
+            <div class="time" id="RTC"></div>
+            <br>
+            <br>
             <br>
             <br>
             <h6>© Copyright, 2023. OfficialHoSay</h6>
     </div>
 </body>
+<script type="application/javascript" src="moment.min.js"></script>
+<script async>
+    var urlParams;
+    (function () {
+        var match,
+            pl     = /\+/g,
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+        urlParams = {};
+        while (match = search.exec(query))
+           urlParams[decode(match[1])] = decode(match[2]);
+    })();
+    var output = document.getElementById("RTC");
+    if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
+    if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
+    var c;
+    setInterval(
+    c = function() {
+        output.innerText = moment().format(urlParams["format"] || 'HH:mm:ss');
+    }, 1000);
+    c();
+</script>
 </html>

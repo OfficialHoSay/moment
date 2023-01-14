@@ -52,3 +52,16 @@ hr {
   margin: auto;
   max-width: 300px;
 }
+.time {
+  display: inline-block;
+	font-family: "SF Mono", monospace;
+  font-weight: 700;
+	font-size: 32px;
+  margin-top: -10px;
+	text-align: center;
+  vertical-align: middle;
+	color: #e3dfda; 
+	border-radius: 10px; 
+	padding: 7px 17px 7px 17px; 
+	background-color: rgb(51, 56, 113);
+}
