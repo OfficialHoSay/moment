@@ -9,6 +9,7 @@ html {
       -text-size-adjust: 100%;
   background-color: #202223;
   color-scheme: dark !important;
+  margin: 20px;
 }
 body {
   margin: auto;
@@ -45,7 +46,7 @@ hr {
   background-color: #687382;
 }
 .center {
-  margin: 4% auto;
+  margin: auto;
   max-width: 800px;
   text-align: center;
 }
