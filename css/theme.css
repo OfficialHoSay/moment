@@ -111,3 +111,49 @@ a.skipnav:focus {
   transform: translateY(-50%);
   opacity: 1;
 }
+
+@media (color-gamut: p3) {
+  html {
+      background-color: color(display-p3 0.125 0.125 0.130 / 1);
+  }
+  h1 {
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+  h2 {
+    color: color(display-p3 0.760 0.760 0.780 / 1);
+  }
+  h3 {
+    color: color(display-p3 0.485 0.48 0.495 / 1);
+  }
+  h4 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  h5 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  h6 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  p {
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+  a {
+    color: color(display-p3 0.560 0.200 0.290 / 1);
+  }
+  hr {
+    background-color: color(display-p3 0.485 0.48 0.550 / 1);
+    color: color(display-p3 0.485 0.48 0.550 / 1);
+  }
+  .time {
+    background-color: color(display-p3 0.560 0.200 0.290 / 1);
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+  a.button {
+    background-color: color(display-p3 0.125 0.135 0.720 / 1);
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+  a.skipnav {
+    background-color: color(display-p3 0.560 0.200 0.290 / 1);
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+}
