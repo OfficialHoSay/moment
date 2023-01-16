@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="index,follow,noarchive">
     <title>HTML Tags</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a sample site that showcases basic HTML tags.">
@@ -114,6 +115,9 @@
 </head>
     <!-- Finally, the body section with stuff -->
 <body>
+    <!-- Skip Navigation -->
+    <a href="#main" class="skipnav">Skip Navigation</a>
+    <main id="main">
     <div class="center">
             <h1>Hello World</h1>
             <hr>
@@ -126,14 +130,14 @@
                 <br>
                 <br>
             Established 2021, this is right where it all begins. Whether you’re looking for design inspiration for your next project, or to get a quote from the HitSpark team, you’ve arrived at the right place.</p>
-            <img class="img" type="image/png" src="img/memoji.png" alt="HoSay Memoji" height="140px">
+            <img class="img" type="image/png" src="img/memoji.png" alt="HoSay's Memoji" height="140px">
             <hr>
             <br>
             <p><a href="https://hitsparkdesign.com/">Visit HitSpark Design</a></p>
             <p><a href="https://prod.jxse.dev/">Visit my Web Prod Environment (Which could even be this very page)</a></p>
             <p><a href="https://jxse.dev/">Visit my Profile</a></p>
             <br>
-            <a href="https://google.com/" rel="noreferrer noopener" target="_blank"><img class="img" type="image/png" src="img/memoji2.png" alt="HoSay Memoji" height="140px"></a>
+            <a href="https://google.com/" rel="noreferrer noopener" target="_blank"><img class="img" type="image/png" src="img/memoji2.png" alt="Visit Google" height="140px"></a>
             <h3>I'm only doing this for the cute Häägen-Dazs worker I saw last Sunday.</h3>
             <br>
             <!-- Add a couple lists with a couple items each -->
@@ -164,12 +168,15 @@
             <br>
             <br>
     </div>
+    </main>
     <!-- Return to Top HREF Navigation -->
     <div class="rightalign">
         <a href="#" class="button">Go back to the top</a>
     </div>
+    <footer>
     <div id="copyright" class="center">
         <h6>© Copyright, 2023. OfficialHoSay</h6>
     </div>
+    </footer>
 </body>
 </html>
