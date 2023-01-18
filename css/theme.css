@@ -2,48 +2,22 @@
  * Basic HTML Theme
  * Copyright (C) 2023, OfficialHoSay.
  */
-html {
+ html {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
       -text-size-adjust: 100%;
-  background-color: #202223;
-  color-scheme: dark !important;
   margin: 20px;
 }
 body {
   margin: auto;
 }
-h1 {
-  color:#e3dfda;
-}
-h2 {
-  color:#b9bdc1;
-}
-h3 {
-  color:#7d8085;
-}
-h4 {
-  color:#6b6d70;
-}
-h5 {
-  color:#6b6d70;
-}
-h6 {
-  color:#6b6d70;
-}
 p {
-  color:#e3dfda;
   font-size: 13px;
-}
-a {
-  color:#b64d63
 }
 hr {
   height: 2px;
   border-width: 0;
-  color: #687382;
-  background-color: #687382;
 }
 .rightalign {
   margin: auto;
@@ -68,10 +42,8 @@ hr {
   margin-top: -10px;
 	text-align: center;
   vertical-align: middle;
-	color: #e3dfda; 
 	border-radius: 10px; 
-	padding: 7px 17px 7px 17px; 
-	background-color: #8e1537;
+	padding: 7px 17px 7px 17px;
 }
 a.button {
   -webkit-appearance: button;
@@ -80,17 +52,12 @@ a.button {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-	color: #e3dfda; 
 	border-radius: 10px; 
-	padding: 7px 12px 7px 12px; 
-	background-color: #1b59be;
+	padding: 7px 12px 7px 12px;
   text-decoration: none;
   transition-duration: 0.2s;
   font-size: 12px;
   font-weight: 600;
-}
-.button:hover {
-  background-color: #102c5a;
 }
 a.skipnav {
   text-align: center;
@@ -98,9 +65,7 @@ a.skipnav {
   top: -100%;
   z-index: 999;
   padding: 1em;
-  background-color: #8e1537;
-  border-radius: 10px; 
-  color: #e3dfda;
+  border-radius: 10px;
   opacity: 0;
   transition-duration: 0.2s;
   font-size: 12px;
@@ -112,9 +77,160 @@ a.skipnav:focus {
   opacity: 1;
 }
 
-@media (color-gamut: p3) {
+@media screen, screen and (prefers-color-scheme: light), not (color-gamut: p3) {
+  html {
+    background-color: #ffffff;
+    color-scheme: light !important;
+  }
+  h1 {
+    color:#131317;
+  }
+  h2 {
+    color:#6b6d70;
+  }
+  h3 {
+    color:#6b6d70;
+  }
+  h4 {
+    color:#6b6d70;
+  }
+  h5 {
+    color:#7d8085;
+  }
+  h6 {
+    color:#a3a7ac;
+  }
+  p {
+    color:#131317;
+  }
+  a {
+    color:#c01646;
+  }
+  hr {
+    color: #687382;
+    background-color: #687382;
+  }
+  .time {
+    color: #f2efec;
+    background-color: #c01646;
+  }
+  a.button {
+    color: #ffffff;
+    background-color: #1b59be;
+  }
+  .button:hover {
+    background-color: #174286;
+  }
+  a.skipnav {
+    background-color: #c01646;
+    color: #f2efec;
+  }
+}
+
+ @media  screen and (prefers-color-scheme: dark), not (color-gamut: p3) {
+  html {
+  background-color: #202223;
+  color-scheme: dark !important;
+  }
+  h1 {
+    color:#e3dfda;
+  }
+  h2 {
+    color:#b9bdc1;
+  }
+  h3 {
+    color:#7d8085;
+  }
+  h4 {
+    color:#6b6d70;
+  }
+  h5 {
+    color:#6b6d70;
+  }
+  h6 {
+    color:#6b6d70;
+  }
+  p {
+    color:#e3dfda;
+  }
+  a {
+    color:#b64d63;
+  }
+  hr {
+    color: #687382;
+    background-color: #687382;
+  }
+  .time {
+	  color: #e3dfda;
+	  background-color: #8e1537;
+  }
+  a.button {
+	  color: #e3dfda;
+	  background-color: #1b59be;
+  }
+  .button:hover {
+    background-color: #102c5a;
+  }
+  a.skipnav {
+    background-color: #8e1537;
+    color: #e3dfda;
+  }
+}
+
+@media screen and (color-gamut: p3) and (prefers-color-scheme: light) {
+  html {
+    background-color: color(display-p3 1 1 1 / 1);
+    color-scheme: light !important;
+  }
+  h1 {
+    color: color(display-p3 0 0.015 0.070 / 1);
+  }
+  h2 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  h3 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  h4 {
+    color: color(display-p3 0.415 0.41 0.425 / 1);
+  }
+  h5 {
+    color: color(display-p3 0.485 0.48 0.495 / 1);
+  }
+  h6 {
+    color: color(display-p3 0.760 0.760 0.780 / 1);
+  }
+  p {
+    color: color(display-p3 0 0.015 0.070 / 1);
+  }
+  a {
+    color: color(display-p3 0.885 0.185 0.300 / 1);
+  }
+  hr {
+    background-color: color(display-p3 0.485 0.48 0.550 / 1);
+    color: color(display-p3 0.485 0.48 0.550 / 1);
+  }
+  .time {
+    color: color(display-p3 0.980 1 1 / 1);
+    background-color: color(display-p3 0.885 0.185 0.300 / 1);
+  }
+  a.button {
+    color: color(display-p3 1 1 1 / 1);
+    background-color: color(display-p3 0.125 0.135 0.720 / 1);
+  }
+  .button:hover {
+    background-color: color(display-p3 0.100 0.015 0.465 / 1);
+  }
+  a.skipnav {
+    background-color: color(display-p3 0.885 0.185 0.300 / 1);
+    color: color(display-p3 0.980 1 1 / 1);
+  }
+}
+
+@media screen and (color-gamut: p3) and (prefers-color-scheme: dark) {
   html {
       background-color: color(display-p3 0.125 0.125 0.130 / 1);
+      color-scheme: dark !important;
   }
   h1 {
     color: color(display-p3 0.980 1 1 / 1);
@@ -151,6 +267,9 @@ a.skipnav:focus {
   a.button {
     background-color: color(display-p3 0.125 0.135 0.720 / 1);
     color: color(display-p3 0.980 1 1 / 1);
+  }
+  .button:hover {
+    background-color: color(display-p3 0.15 0.095 0.55 / 1);
   }
   a.skipnav {
     background-color: color(display-p3 0.560 0.200 0.290 / 1);
