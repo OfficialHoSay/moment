@@ -1,0 +1,38 @@
+/*!
+ * Block Layout Test
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+
+html, body {
+    margin: 0 !important;
+}
+div {
+    float: left;
+    height: 25vh !important;
+ }
+ div.div1, div.div7 {
+    width: 100%;
+    background-color: blue;
+ }
+ div.div2, div.div3 {
+    width: 50%;
+ }
+ div.div2 {
+    background-color: blueviolet;
+ }
+ div.div3 {
+    background-color: deeppink;
+ }
+ div.div5 {
+    width: 40%;
+    background-color: yellow;
+    text-align: center;
+ }
+ div.div4, div.div6 {
+    width: 30%;
+    background-color: red;
+ }
+ span.text {
+    font-size: 12px;
+    font-weight: 800;
+ }
