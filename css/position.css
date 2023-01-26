@@ -1,0 +1,71 @@
+/*!
+ * Position Test
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+div.static {
+    position: static;
+}
+div.fixed {
+    position: fixed;
+    background-color: coral;
+    padding: 0 0.5em;
+    bottom: 3vh;
+    border-radius: 0.5em;
+    z-index: 1;
+}
+div.fixed p {
+    color: aliceblue;
+}
+div.relative {
+    position: relative;
+    background-color: cornflowerblue;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    left: 35.5%;
+    bottom: 12vh;
+}
+div.relative p {
+    color: aliceblue;
+}
+div.absolute {
+    position: absolute;
+    background-color: darkseagreen;
+    width: 10em;
+    padding: 0.7em;
+    border-radius: 0.5em;
+    top: 30vh;
+}
+div.absolute p {
+    color: aliceblue;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: gold;
+    z-index: 2;
+}
+div.sticky p {
+    color: black;
+    margin: 0;
+    padding: 1em;
+}
+div.container {
+    background-color: crimson;
+    position: relative;
+    height: 10vh;
+    width: 80%;
+}
+div.content {
+    background-color: darkred;
+    position: absolute;
+    height: 4vh;
+    width: 4vh;
+    right: 0;
+    bottom: 0;
+}
+div a {
+    text-decoration: none !important;
+}
