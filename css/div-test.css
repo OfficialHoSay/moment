@@ -3,12 +3,9 @@
  * Copyright (C) 2023, OfficialHoSay.
  */
 
- html, body {
-    margin: 0 !important;
-}
 .center {
     max-width: 100% !important;
-    text-align: center;
+    position: fixed !important;
   }
 div.coltest {
     background-color: crimson;

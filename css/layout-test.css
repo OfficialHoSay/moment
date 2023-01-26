@@ -3,8 +3,8 @@
  * Copyright (C) 2023, OfficialHoSay.
  */
 
-html, body {
-    margin: 0 !important;
+main {
+   margin: 0 !important;
 }
 div {
     float: left;
