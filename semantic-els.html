@@ -1,4 +1,4 @@
-<!-- Demo file for demonstrating basic HTML tags -->
+<!-- Demo file for demonstrating CSS3 properties -->
 <!-- (C) Copyright, 2023. OfficialHoSay -->
 <!DOCTYPE html>
 <html lang="en-US">
@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="robots" content="index,follow,noarchive">
-    <title>HTML Tags</title>
+    <title>CSS3 Properties</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is a sample site that showcases basic HTML tags.">
+    <meta name="description" content="This is a sample site that showcases CSS3 properties.">
     <meta name="author" content="HoSay Hernandez">
     <meta name="theme-color" content="color(display-p3 0.125 0.125 0.130 / 1)" media="only screen and (prefers-color-scheme: dark) and (color-gamut: p3)"/>
     <meta name="theme-color" content="color(display-p3 1 1 1 / 1)" media="only screen and (prefers-color-scheme: light) and (color-gamut: p3)"/>
@@ -18,7 +18,7 @@
     <!-- Apple Web App Flags and Assets -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="HoSay’s Web Dev Test">
+    <meta name="apple-mobile-web-app-title" content="HoSay’s CSS3 Test">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" media="(prefers-color-scheme: dark)">
     <meta name="apple-mobile-web-app-status-bar-style" content="default" media="(prefers-color-scheme: light)">
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-precomposed.png" crossorigin="anonymous">
@@ -80,119 +80,52 @@
     <meta name="msapplication-TileColor" content="#8e1537">
     <meta name="msapplication-TileImage" content="https://prod.jxse.dev/img/ms-icon-144h.png">
     <link rel="stylesheet" type="text/css" media="print, screen" href="css/theme.css">
-    <link href="https://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="print, screen" href="css/css3-props.css">
     <!-- Site Descriptions and Social Previews -->
-    <link rel="canonical" href="https://prod.jxse.dev">
-    <link rel="alternate" hreflang="en" href="https://prod.jxse.dev">
-    <link rel="alternate" hreflang="x-default" href="https://prod.jxse.dev">
-    <meta property="og:site_name" content="HoSay’s Web Dev Test">
-    <meta property="og:title" content="HoSay’s Web Dev Test">
-    <meta property="og:url" content="https://prod.jxse.dev">
+    <link rel="canonical" href="https://prod.jxse.dev/semantic-els">
+    <link rel="alternate" hreflang="en" href="https://prod.jxse.dev/semantic-els">
+    <link rel="alternate" hreflang="x-default" href="https://prod.jxse.dev/semantic-els">
+    <meta property="og:site_name" content="HoSay’s CSS3 Test">
+    <meta property="og:title" content="HoSay’s CSS3 Test">
+    <meta property="og:url" content="https://prod.jxse.dev/semantic-els">
     <meta property="og:type" content="website">
     <meta property="og:ttl" content="1200">
     <meta property="og:image" content="https://prod.jxse.dev/img/hero_hs.png">
     <meta property="og:image:width" content="900">
     <meta property="og:image:height" content="450">
-    <meta property="og:description" content="This is a sample site that showcases basic HTML tags.">
-    <meta name="twitter:title" content="HoSay’s Web Dev Test">
-    <meta name="twitter:url" content="https://prod.jxse.dev">
+    <meta property="og:description" content="This is a sample site that showcases CSS3 properties.">
+    <meta name="twitter:title" content="HoSay’s CSS3 Test">
+    <meta name="twitter:url" content="https://prod.jxse.dev/semantic-els">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="This is a sample site that showcases basic HTML tags.">
+    <meta name="twitter:description" content="This is a sample site that showcases CSS3 properties.">
     <meta name="twitter:image" content="https://prod.jxse.dev/img/hero_hs.png">
-    <meta itemprop="name" content="HoSay’s Web Dev Test">
-    <meta itemprop="url" content="https://prod.jxse.dev">
+    <meta itemprop="name" content="HoSay’s CSS3 Test">
+    <meta itemprop="url" content="https://prod.jxse.dev/semantic-els">
     <meta itemprop="thumbnailUrl" href="img/hero_hs.png" crossorigin="anonymous">
     <link rel="image_src" href="img/hero_hs.png" crossorigin="anonymous">
     <meta itemprop="image" href="img/hero_hs.png" crossorigin="anonymous">
-    <!-- External Link Optimizations -->
-    <link rel="dns-prefetch" href="https://prod.jxse.dev">
-    <link rel="dns-prefetch" href="https://hitsparkdesign.com">
-    <link rel="dns-prefetch" href="https://jxse.dev">
-    <link rel="dns-prefetch" href="https://google.com">
-    <link rel="preconnect" href="https://hitsparkdesign.com">
-    <link rel="preconnect" href="https://prod.jxse.dev">
-    <link rel="preconnect" href="https://jxse.dev">
-    <!-- Real Time Clock Scripts -->
-    <script type="application/javascript" src="moment.min.js"></script>
-    <script type="application/javascript" src="js/time.js" async></script>
 </head>
     <!-- Finally, the body section with stuff -->
 <body>
-    <!-- Skip Navigation -->
-    <a href="#main" class="skipnav">Skip Navigation</a>
-    <main id="main">
+    <main>
         <div class="center">
-            <h1>Hello World</h1>
-            <hr>
-            <h2>This is a Subheading.</h2>
-            <h3>This is even Smaller.</h3>
-            <h4>We could go even smaller if you wanted.</h4>
-            <h5>Like this.</h5>
-            <h6>Or even this.</h6>
-            <p>HitSpark is a design firm based in Mexico. Continuously driven by the exciting prospect of designing the world, we are always looking to innovate through our work.
-                <br>
-                <br>
-            Established 2021, this is right where it all begins. Whether you’re looking for design inspiration for your next project, or to get a quote from the HitSpark team, you’ve arrived at the right place.</p>
-            <picture>
-                <source type="image/webp" srcset="img/webp/memoji.webp">
-                <img class="img" type="image/png" src="img/memoji.png" alt="HoSay's Memoji" height="140px" width="140px">
-            </picture>
-            <hr>
-            <br>
-            <p><a href="https://hitsparkdesign.com/">Visit HitSpark Design</a></p>
-            <p><a href="https://prod.jxse.dev/">Visit my Web Prod Environment (Which could even be this very page)</a></p>
-            <p><a href="https://jxse.dev/">Visit my Profile</a></p>
-            <p><a href="layout-test.html">Layout Test</a></p>
-            <p><a href="columns.html">Columns Test</a></p>
-            <p><a href="nav-stage.html">Navigation Test</a></p>
-            <p><a href="position-test.html">Position Test</a></p>
-            <p><a href="semantic-els.html">CSS3 Test</a></p>
-            <br>
-            <a href="https://google.com/" rel="noreferrer noopener" target="_blank">
-                <picture>
-                    <source type="image/webp" srcset="img/webp/memoji2.webp">
-                    <img class="img" type="image/png" src="img/memoji2.png" alt="Visit Google" height="140px" width="140px">
-                </picture>
-            </a>
-            <h3>I'm only doing this for the cute Häägen-Dazs worker I saw last Sunday.</h3>
-            <br>
-            <!-- Add a couple lists with a couple items each -->
-            <div class="list">
-                <h3>Ordered List</h3>
-                <h4>
-                    <ol>
-                        <li>This is the first item</li>
-                        <li>This is the second item</li>
-                        <li>This is the third item</li>
-                    </ol>
-                </h4>
-                <h3>Unordered List</h3>
-                <h4>
-                    <ul>
-                        <li>This is one of the items</li>
-                        <li>This is another one</li>
-                        <li>This one could be any position</li>
-                    </ul>
-                </h4>
+            <div style="width: 30%; height: 15vh; background-color: darkolivegreen; margin: auto;" class="time"></div>
+            <div style="width: 15vh; height: 15vh; align-items: center; justify-content: center; margin: auto;" class="time circle">
+                <a href="index.html"><p>Go Back</p></a>
             </div>
-            <p>Hello. <b>This is bold text.</b> <i>This is italic text.</i></p>
+            <div style="width: 30%; height: 15vh; background-color: darkslateblue; margin: auto;" class="time shadow"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="center">
+            <p class="text-shadow">Download this Free Vector about Travel postcard in flat design, and discover more than 43 Million Professional Graphic Resources on Freepik. #freepik #vector #traveling #worldtravel</p>
+            <br>
+            <div style="width: 100%; height: 30vh;" class="pattern"></div>
             <br>
             <br>
-            <!-- Real Time Clock Body -->
-            <h4>By the way, the current time is:</h4>
-            <div class="time" id="RTC">00:00:00</div>
-            <br>
-            <br>
+            <div style="width: 100%; height: 20vh;" class="gradient"></div>
         </div>
     </main>
-    <!-- Return to Top HREF Navigation -->
-    <div class="rightalign">
-        <a href="#" class="button">Go back to the top</a>
-    </div>
-    <footer>
-        <div id="copyright" class="center">
-            <h6>© Copyright, 2023. OfficialHoSay</h6>
-        </div>
-    </footer>
 </body>
 </html>

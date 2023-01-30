@@ -1,0 +1,49 @@
+/*!
+ * CSS3 Test
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+div.circle {
+    border-radius: 100% !important;
+}
+.shadow {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+}
+div {
+    margin: auto !important;
+}
+div.pattern {
+    position: relative;
+    background-color: lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7em;
+}
+
+div.pattern::before {
+    border-radius: 0.7em;
+    position: absolute;
+    content: "";
+    background-image: url(../img/pattern.svg);
+    background-size: 12vw;
+    background-repeat: repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.gradient {
+    border-radius: 0.7em;
+    background-color: aqua;
+    background: -webkit-linear-gradient(90deg, aqua 0%, blue 100%);
+    background: -moz-linear-gradient(90deg, aqua 0%, blue 100%);
+    background: linear-gradient(90deg, aqua 0%, blue 100%);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .text-shadow {
+        text-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+    }
+}
