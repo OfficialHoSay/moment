@@ -1,0 +1,146 @@
+/*!
+ * CuauRadio OSD
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+
+@import url("../fonts/DINNextLTPro/stylesheet.css");
+
+:root {
+    --duration: 60s;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+html, body {
+    margin: 0;
+}
+div#RTC {
+    position: fixed;
+    right: 5.4vw;
+    bottom: 6.9vh;
+    display: inline-block;
+    font-family: 'DIN Next LT Pro', monospace;
+    font-weight: 600;
+    font-size: 3.1vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: -0.15em;
+    color: white; 
+    border-radius: 0.35em; 
+    padding: 0.27em 0.47em 0.13em 0.47em; 
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 7.7vw;
+}
+div#bug {
+    position: fixed;
+    width: 11.4vw;
+    right: 4.8vw;
+    top: 7.3vh;
+}
+.shadow {
+    filter: drop-shadow(0 0 2em rgb(0 0 0));
+}
+.ticker-background {
+    display: flex;
+    position: fixed;
+    width: 79.1vw;
+    height: 4.2vh;
+    left: 3.6vw;
+    bottom: 8vh;
+    background: linear-gradient(90deg, rgba(255,0,248,1) 0%, rgba(212,5,51,1) 100%);
+    border-width: 0.4vh 0;
+    border-style: solid;
+    border-color: rgb(99, 216, 255);
+    box-sizing: content-box;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.ticker-wrap {
+    position: relative;
+    box-sizing: content-box;
+    padding-left: 100%;
+}
+.ticker {
+        display: inline-block;
+        height: 3.6vh;
+        line-height: 3.6vh;  
+        white-space: nowrap;
+        padding-right: 79.1vw;
+        box-sizing: content-box;
+        -webkit-animation-iteration-count: infinite; 
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+       -webkit-animation-name: ticker;
+               animation-name: ticker;
+        -webkit-animation-duration: var(--duration);
+                animation-duration: var(--duration);
+}
+.ticker__item {
+          display: inline-block;
+          padding: 0 0.8vw;
+          font-size: 2.8vh;
+          color: white;
+          font-family: 'DIN Next LT Pro';
+          font-weight: 500;
+          font-style: normal;
+          font-variant: normal;
+          text-shadow: 0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.657);
+        }
+.ticker__item::after {
+    content: "\00A0\00A0\00A0\00A0\00A0/";
+}
+.hidden {
+    display: none !important;
+}
+.ticker::before {
+  content: "NOTICIAS AM\00A0\00A0\00A0\00A0\00A0/";
+  display: inline-block;
+  padding: 0 0.8vw;
+  font-size: 2.8vh;
+  color: white;
+  font-family: 'DIN Next LT Pro';
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  text-shadow: 0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.657);
+}
+.ticker::after {
+  content: "NOTICIAS AM";
+  display: inline-block;
+  padding: 0 0.8vw;
+  font-size: 2.8vh;
+  color: white;
+  font-family: 'DIN Next LT Pro';
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  text-shadow: 0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.657);
+}

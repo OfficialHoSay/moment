@@ -1,0 +1,119 @@
+/*!
+ * Liftoff Theme v0.1
+ * COLOR DEFINITION FILE
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+
+ /* COLOR VALUES */
+
+ /* sRGB */
+:root {
+    --bright-red:
+    rgb(255 0 0);
+    --bright-green:
+    rgb(0 255 0);
+    --bright-blue:
+    rgb(0 0 255);
+    --bright-cyan:
+    rgb(0 255 255);
+    --bright-magenta:
+    rgb(255 0 255);
+    --bright-yellow:
+    rgb(255 255 0);
+    --black:
+    rgb(0 0 0);
+    --white:
+    rgb(255 255 255);
+    --hot-pink:
+    rgb(255 0 190);
+    --bright-orange:
+    rgb(255 182 0);
+    --PANTONE-CoolGray1UP:
+    rgb(225 224 220);
+    --PANTONE-422UP:
+    rgb(169 176 176);
+    --PANTONE-1895UP:
+    rgb(248 185 204);
+    --PANTONE-1915UP:
+    rgb(242 114 144);
+    --PANTONE-1935UP:
+    rgb(220 36 85);
+    --PANTONE-1955UP:
+    rgb(170 33 78);
+    --darkgray-blue:
+    rgb(36 41 46);
+    --liftoff-blue1:
+    rgb(44 91 255);
+    --liftoff-blue2:
+    rgb(44 91 223);
+    --liftoff-blue3:
+    rgb(25 69 188);
+    --liftoff-blue4:
+    rgb(4 46 136);
+    --liftoff-blue5:
+    rgb(71 133 255);
+    --liftoff-blue6:
+    rgb(117 171 255);
+    --liftoff-blue7:
+    rgb(176 219 255);
+    --bright-purple:
+    rgb(155 21 210);
+}
+
+/* Display P3 */
+@media (color-gamut: p3) {
+    @supports (color: color(display-p3 1 1 1)) {
+        :root {
+            --bright-red:
+            color(display-p3 1 0 0);
+            --bright-green:
+            color(display-p3 0 1 0);
+            --bright-blue:
+            color(display-p3 0 0 1);
+            --bright-cyan:
+            color(display-p3 0 1 1);
+            --bright-magenta:
+            color(display-p3 1 0 1);
+            --bright-yellow:
+            color(display-p3 1 1 0);
+            --black:
+            color(display-p3 0 0 0);
+            --white:
+            color(display-p3 1 1 1);
+            --hot-pink:
+            color(display-p3 1 0.25 0.81);
+            --bright-orange:
+            color(display-p3 1 0.715 0);
+            --PANTONE-CoolGray1UP:
+            color(display-p3 0.882 0.878 0.863);
+            --PANTONE-422UP:
+            color(display-p3 0.663 0.690 0.690);
+            --PANTONE-1895UP:
+            color(display-p3 0.973 0.725 0.8);
+            --PANTONE-1915UP:
+            color(display-p3 0.949 0.447 0.565);
+            --PANTONE-1935UP:
+            color(display-p3 0.863 0.141 0.333);
+            --PANTONE-1955UP:
+            color(display-p3 0.667 0.129 0.306);
+            --darkgray-blue:
+            color(display-p3 0.14 0.16 0.18);
+            --liftoff-blue1:
+            color(display-p3 0.174 0.357 1);
+            --liftoff-blue2:
+            color(display-p3 0.174 0.357 0.874);
+            --liftoff-blue3:
+            color(display-p3 0.097 0.271 0.736);
+            --liftoff-blue4:
+            color(display-p3 0.015 0.181 0.535);
+            --liftoff-blue5:
+            color(display-p3 0.277 0.520 1);
+            --liftoff-blue6:
+            color(display-p3 0.457 0.67 1);
+            --liftoff-blue7:
+            color(display-p3 0.689 0.859 1);
+            --bright-purple:
+            color(display-p3 0.607 0.082 0.822);
+        }
+    }
+}

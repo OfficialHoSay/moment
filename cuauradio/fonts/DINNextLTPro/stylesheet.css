@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro Black Condensed'), local('DINNextLTPro-BlackCondensed'),
+        url('DINNextLTPro-BlackCondensed.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Regular'), local('DINNextLTPro-Regular'),
+        url('DINNextLTPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Medium'), local('DINNextLTPro-Medium'),
+        url('DINNextLTPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold Italic'), local('DINNextLTPro-BoldItalic'),
+        url('DINNextLTPro-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro UltraLight Condensed'), local('DINNextLTPro-UltraLightCond'),
+        url('DINNextLTPro-UltraLightCond.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro Bold Condensed'), local('DINNextLTPro-BoldCondensed'),
+        url('DINNextLTPro-BoldCondensed.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Rounded LT Pro';
+    src: local('DIN Next Rounded LT Pro Light'), local('DINNextRoundedLTPro-Light'),
+        url('DINNextRoundedLTPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro UltraLight Italic'), local('DINNextLTPro-UltraLightIt'),
+        url('DINNextLTPro-UltraLightIt.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro UltraLight'), local('DINNextLTPro-UltraLight'),
+        url('DINNextLTPro-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro Condensed'), local('DINNextLTPro-Condensed'),
+        url('DINNextLTPro-Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Italic'), local('DINNextLTPro-Italic'),
+        url('DINNextLTPro-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Rounded LT Pro';
+    src: local('DIN Next Rounded LT Pro Medium'), local('DINNextRoundedLTPro-Medium'),
+        url('DINNextRoundedLTPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Heavy'), local('DINNextLTPro-Heavy'),
+        url('DINNextLTPro-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Heavy Italic'), local('DINNextLTPro-HeavyItalic'),
+        url('DINNextLTPro-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold'), local('DINNextLTPro-Bold'),
+        url('DINNextLTPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Rounded LT Pro';
+    src: local('DIN Next Rounded LT Pro Regular'), local('DINNextRoundedLTPro-Regular'),
+        url('DINNextRoundedLTPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Light'), local('DINNextLTPro-Light'),
+        url('DINNextLTPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Rounded LT Pro';
+    src: local('DIN Next Rounded LT Pro Bold'), local('DINNextRoundedLTPro-Bold'),
+        url('DINNextRoundedLTPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Medium Cond';
+    src: local('DIN Next LT Pro Heavy Condensed'), local('DINNextLTPro-HeavyCondensed'),
+        url('DINNextLTPro-HeavyCondensed.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Light Italic'), local('DINNextLTPro-LightItalic'),
+        url('DINNextLTPro-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro Light Condensed'), local('DINNextLTPro-LightCondensed'),
+        url('DINNextLTPro-LightCondensed.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Medium Italic'), local('DINNextLTPro-MediumItalic'),
+        url('DINNextLTPro-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Black'), local('DINNextLTPro-Black'),
+        url('DINNextLTPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro Condensed';
+    src: local('DIN Next LT Pro Medium Condensed'), local('DINNextLTPro-MediumCond'),
+        url('DINNextLTPro-MediumCond.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Black Italic'), local('DINNextLTPro-BlackItalic'),
+        url('DINNextLTPro-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+

@@ -1,0 +1,25 @@
+/*!
+ * Liftoff Theme v0.1
+ * DARK MODE / LIGHT MODE DEFINITIONS
+ * Copyright (C) 2023, OfficialHoSay.
+ */
+
+@media print, screen, screen and (prefers-color-scheme: light) {
+    html {
+        color-scheme: light !important;
+    }
+    :root {
+        --page-background-color: var(--white);
+        --page-element-color: var(--darkgray-blue);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark !important;
+    }
+    :root {
+        --page-background-color: var(--darkgray-blue);
+        --page-element-color: var(--PANTONE-CoolGray1UP);
+    }
+}
