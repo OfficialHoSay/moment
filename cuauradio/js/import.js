@@ -1,6 +1,6 @@
 (async () => {
     const res = await fetch("./img/ticker.txt")
-const textContent = await request.text()
+const textContent = await res.text()
 
 var lines = textContent.split("\n")
 
