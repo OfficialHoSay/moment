@@ -7,7 +7,7 @@
 
 
  :root {
-    --duration: 30s;
+    --duration: 400s;
 }
 
 @-webkit-keyframes ticker {
