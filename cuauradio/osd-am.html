@@ -1,0 +1,38 @@
+<!-- CuauRadio OSD -->
+<!-- Copyright (C) 2023, OfficialHoSay. -->
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CuauRadio OSD</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/osd.css">
+  <script type="application/javascript" src='js/moment.min.js'></script>
+  <script type="application/javascript" src='js/time.js' async></script>
+  <script type="application/javascript" src='js/import.js' async></script>
+  <script type="application/javascript" src='js/fetchWeather.js' async></script>
+  <script type="application/javascript" src='js/fetchCurrency.js' async></script>
+</head>
+<body translate="no">
+    <div class="overlay">
+        <div class="bug">
+            <picture class="shadow">
+                <img src="img/CR_LOGO.svg" alt="CuauRadio Logo">
+            </picture>
+        </div>
+        <div class="lower-third">
+            <div id="RTC">#EC</div>
+            <div class="ticker-background">
+                <div class="ticker-wrap">
+                    <div id="ticker">
+                        <span class="ticker__item">NOTICIAS AM</span>
+                        <span class="ticker__item">TEMPERATURA EN AGUASCALIENTES PARA EL DÍA DE MAÑANA: &nbsp;- &nbsp;MÍNIMA: &nbsp; <span id="temp_min">XXº</span> &nbsp;&nbsp; | &nbsp;&nbsp; MÁXIMA: &nbsp; <span id="temp_max">XXº</span></span>
+                        <span class="ticker__item">TASA DE CAMBIO DEL DÓLAR ESTADOUNIDENSE: &nbsp;-&nbsp; COMPRA: &nbsp;<span id="usd_buy">$XX.XX</span> &nbsp;&nbsp; | &nbsp;&nbsp; VENTA: &nbsp;<span id="usd_sell">$XX.XX</span></span>
+                        <span class="ticker__item">TASA DE CAMBIO DEL EURO: &nbsp;-&nbsp; COMPRA:&nbsp; <span id="eur_buy">$XX.XX</span> &nbsp;&nbsp; | &nbsp;&nbsp; VENTA:&nbsp; <span id="eur_sell">$XX.XX</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
