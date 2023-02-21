@@ -108,7 +108,10 @@ div.ticker-background {
     flex-wrap: nowrap;
     align-content: baseline;
 }
-
+.sports {
+  background: linear-gradient(90deg, rgb(0, 128, 255) 0%, rgb(5, 212, 43) 100%) !important;
+  border-color: rgb(118, 95, 218) !important;
+}
 div.ticker-wrap {
     position: relative;
     box-sizing: content-box;
