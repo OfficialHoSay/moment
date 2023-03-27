@@ -15,7 +15,9 @@ html {
     margin: 0;
     width: 100vw;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
     color: var(--page-element-color);
     background-color: var(--page-background-color);
@@ -24,27 +26,31 @@ body {
 }
 
 main {
-  margin: 2em;
+  margin: 0;
 }
 
 div {
   box-sizing: border-box;
 }
+nav {
+  padding-left: 3em;
+}
 .button {
   text-decoration: none;
 }
 .center {
-  margin: auto;
-  text-align: center;
+  margin-inline: auto;
 }
-.navbar {
+header {
   position: sticky;
-  top: 0%;
+  top: 0;
   display: flex;
   align-items: center;
-  height: 4em;
+  min-height: 4.5em;
   margin: 0;
+  padding-inline: 10em 5em;
   background-color: var(--liftoff-blue1);
+  justify-content: space-between;
 }
 .nav-item {
   background-color: var(--PANTONE-CoolGray1UP);
@@ -65,12 +71,6 @@ div {
   background-color: var(--liftoff-blue1);
   color: var(--PANTONE-CoolGray1UP);
 }
-div.filler {
-  height: 200vh;
-  width: 50%;
-  background-color: var(--PANTONE-CoolGray1UP);
-  border-radius: 2em;
-}
 .floating-round {
   border-radius: 50%;
   background-color: var(--liftoff-blue1);
@@ -84,4 +84,79 @@ div.filler {
 }
 .light-els {
   color: var(--PANTONE-CoolGray1UP);
+}
+.site-name {
+  color: var(--PANTONE-CoolGray1UP);
+  font-weight: 600;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+.hero {
+  background-image: url(../img/hero_isometric.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: relative;
+  left: 0;
+  width: 100vw;
+  margin-left: 0;
+  z-index: -1;
+  transform: translateY(2em);
+  height: clamp(35em,50em,70vh);
+  display: flex;
+  align-items: center;
+}
+.hero > .hero-txt {
+  background-color: var(--page-background-color);
+  width: 30%;
+  margin-left: 10%;
+}
+.app-launcher {
+  background-color: aqua;
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: clamp(45em,65em,90vh);
+  z-index: -1;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 6em;
+  margin: 0;
+  padding-inline: 5em;
+  background-color: var(--liftoff-blue1);
+  justify-content: space-between;
+}
+.notice > * {
+  margin: 0.5em;
+}
+.about {
+  background-image: url(../img/memoji_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  position: relative;
+  left: 0;
+  width: 100vw;
+  margin-left: 0;
+  margin-block: 5em;
+  z-index: -1;
+  transform: translateX(-10em);
+  height: clamp(35em,50em,70vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30em;
+  padding-right: 0em;
+}
+.about-content {
+  background-color: var(--page-background-color);
+  width: 50%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
 }
