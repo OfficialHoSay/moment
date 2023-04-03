@@ -35,9 +35,6 @@ div {
 nav {
   padding-left: 3em;
 }
-.button {
-  text-decoration: none;
-}
 .center {
   margin-inline: auto;
 }
@@ -112,7 +109,8 @@ header {
   margin-left: 10%;
 }
 .app-launcher {
-  background-color: aqua;
+  background-image: url(../img/bg_launcher.png);
+  background-size: cover;
   position: relative;
   left: 0;
   width: 100vw;
@@ -121,6 +119,8 @@ header {
   margin-left: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 footer {
   display: flex;
@@ -158,5 +158,72 @@ footer {
   width: 50%;
   margin-left: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.projects-carousel {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: clamp(45em,65em,90vh);
+  z-index: -1;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info {
+  min-height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  padding: 1em;
+  background-color: var(--liftoff-blue1);
+  border-radius: 0.7em;
+}
+.app-launcher::after {
+  --div-curve: url(../img/curve.svg);
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background-color: var(--page-background-color);
+  width: 100vw;
+  height: 25%;
+  -webkit-mask: var(--div-curve);
+  mask: var(--div-curve);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.project-card {
+  background-color: magenta;
+  flex-basis: 40%;
+  height: 100%;
+  z-index: -1;
+}
+.center-project {
+  --div-trapezoid: url(../img/project-mask.svg);
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  background-color: rgb(0, 255, 255);
+  height: 100%;
+  -webkit-mask: var(--div-trapezoid);
+  mask: var(--div-trapezoid);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.dim {
+  opacity: 20%;
 }
