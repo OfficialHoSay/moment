@@ -109,42 +109,53 @@
     <header>
         <a href="#" class="site-name">jxse.dev</a>
         <nav>
-            <span class="nav-item">Test</span>
-            <span class="nav-item">Test 2</span>
-            <span class="nav-item">Test 3</span>
+            <a href="#welcome"><span class="nav-item">Welcome</span></a>
+            <a href="launcher.html"><span class="nav-item">App Launcher</span></a>
+            <a href="#about"><span class="nav-item">About Me</span></a>
+            <a href="#projects"><span class="nav-item">Other Projects</span></a>
         </nav>
     </header>
     <a href="#"><div class="floating-round"><div class="center light-els">Up</div></div></a>
     <main>
-        <div class="hero">
+        <div class="hero" id="welcome">
             <div class="hero-txt">
-                <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum quam perspiciatis voluptas quia, inventore iure praesentium corporis reprehenderit sapiente fugiat pariatur sequi cum velit, nesciunt voluptatem, nam ad expedita.</p>
+                <h1>Welcome to jxse.dev!</h1>
+                <p>You have reached the homepage to my intranet, so let me tell you about a few things you can do while you’re here!
+                    <br>
+                    <br>
+                    Below, you’ll be able to find a link to my app launcher (login required), more information about myself, links to other projects of mine and from my friends, and general information about the page.</p>
+                    <h3>Be civil and enjoy your stay!</h3>
             </div>
         </div>
-        <div class="app-launcher">
+        <div class="app-launcher" id="launcher">
             <h1>App Launcher</h1>
-            <span class="button">Log In</span>
+            <a href="launcher.html"><span class="button">Log In</span></a>
         </div>
-        <div class="about">
-            <img src="img/memoji_1.png" alt="Memoji" height="80%">
+        <div class="about" id="about">
+            <img src="img/memoji.webp" alt="Memoji" height="80%" class="mobile-hide">
             <div class="about-content">
             <div class="hero-txt">
-                <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum quam perspiciatis voluptas quia, inventore iure praesentium corporis reprehenderit sapiente fugiat pariatur sequi cum velit, nesciunt voluptatem, nam ad expedita.</p>
+                <h1>About Me</h1>
+                <p>Whether you call me Joe, Jose, HoSay, or Joseph: I like to design things. Among other stuff. You can follow me on social media to keep up with my new projects and read into my inner thoughts.</p>
             </div>
             <div class="buttons">
-                <span class="twitter-btn button">@OfficialHoSay</span>
-                <span class="instagram-btn button">@officialhosay</span>
-                <span class="linktree-btn button">@hosay</span>
-                <span class="mastodon-btn button">@mstdn.social@hosay</span>
+                <a href="https://twitter.com/OfficialHoSay"><span class="twitter-btn button">@OfficialHoSay</span></a>
+                <a href="https://instagram.com/OfficialHoSay"><span class="instagram-btn button">@officialhosay</span></a>
+                <a href="https://linktr.ee/hosay"><span class="linktree-btn button">hosay</span></a>
+                <a href="https://mstdn.social/@hosay"><span class="mastodon-btn button">@mstdn.social@hosay</span></a>
             </div>
         </div>
         </div>
-        <div class="projects-carousel">
-            <div class="project-card"></div>
-            <div class="center-project"></div>
-            <div class="project-card"></div>
+        <div class="projects-carousel" id="projects">
+            <a href="dynastic.html" class="project-card"><div class="dynastic-bg">
+                <img src="img/dynastic-logo.svg" alt="Dynastic Logo" width="50%">
+            </div></a>
+            <a href="hitspark.html" class="center-project"><div class="hitspark-bg">
+                <img src="img/hitspark-logo.svg" alt="Hitspark Logo" width="50%" class="shadow">
+            </div></a>
+            <a href="cuauradio.html" class="project-card"><div class="cuauradio-bg">
+                <img src="img/cr-logo.svg" alt="CuauRadio Logo" width="50%" class="shadow">
+            </div></a>
         </div>
         <div class="info">You’ve reached the end of the&nbsp;<s class="dim">road</s>&nbsp;page, my friend.</div>
     </main>
@@ -153,11 +164,11 @@
             <h5>® Copyright, 2023. OfficialHoSay</h5>
             <h5>Made with &lt;3 from Mexico.</h5>
         </div>
-        <div class="nav-lower">
-            <span class="nav-item">Test 4</span>
-            <span class="nav-item">Test 5</span>
-            <span class="nav-item">Test 6</span>
-        </div>
+        <nav>
+            <a href="privacy.html"><span class="nav-item">Privacy Policy</span></a>
+            <a href="terms.html"><span class="nav-item">Terms of Use</span></a>
+            <a href="dmca.html"><span class="nav-item">DMCA</span></a>
+        </nav>
     </footer>
 </body>
 </html>

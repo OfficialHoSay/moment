@@ -11,6 +11,7 @@
     :root {
         --page-background-color: var(--white);
         --page-element-color: var(--darkgray-blue);
+        --page-accent-color: var(--PANTONE-CoolGray1UP);
     }
 }
 
@@ -21,5 +22,6 @@
     :root {
         --page-background-color: var(--darkgray-blue);
         --page-element-color: var(--PANTONE-CoolGray1UP);
+        --page-accent-color: var(--darkgray-accent);
     }
 }
